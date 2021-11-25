@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: #6a6a6b;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #373d4a;
+}
+main{
+    width: 90vw;
+    height: 80vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+P{
+    margin-top: 5vh;
+    margin-left: 5vw;
+    font-size: 4vh;
+}
+input{
+    margin-top: 0.4vh;
+}
+input:focus{
+    outline:#d8e3fe solid 0.25vh!important;
+}
+input:not(.tags){
+    width: 40vw;
+    height: 6vh;
+    background-color: #f2f3f5;
+    outline: none;
+    border: none;
+    border-radius: 1vh;
+    font-size: 4vh;
+    padding-left:1.5vw;
+    margin-left: 5vw;
+}
+.tags-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.tags{
+    width: 18vw;
+    height: 6vh;
+    background-color: #f2f3f5;
+    outline: none;
+    border: none;
+    border-radius: 1vh;
+    font-size: 4vh;
+    padding-left:1.5vw;
+    padding-right: 1.5vw;
+    margin-left: 5vw;
+}
+.tags:focus::-webkit-input-placeholder{
+    color: transparent;
+}
+.publish{
+    position: absolute;
+    right: 5vw;
+    bottom: 2vh;
+    height: 6vh;
+    width: 60vw;
+    font-size: 3vh;
+    color: #ffffff;
+    background-color: #3b75fb;
+    outline: none;
+    border: none;
+    border-radius: 3vh;
+}

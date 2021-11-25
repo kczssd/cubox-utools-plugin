@@ -4,10 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
     <title>cubox-utools-plugin</title>
 </head>
 <body>
-    <div class="upload-list"></div>
+    <main>
+        <p>题目</p>
+        <input type="text" class="title"/>
+        <p>描述</p>
+        <input type="text" class="description"/>
+        <p>收藏夹</p>
+        <input type="text" class="folder"/>
+        <p>标签</p>
+        <div class="tags-list">
+            <input list="tags-option" placeholder="+ 添加标签" type="text" class="tags"/>
+            <datalist id="tags-option">
+                <option>words</option>
+                <option>react</option>
+                <option>vue</option>
+            </datalist>
+        </div>
+    </main>
+    <button class="publish">发布</button>
     <script type="module" src="./index.js"></script>
 </body>
 </html>
