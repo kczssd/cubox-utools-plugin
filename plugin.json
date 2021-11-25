@@ -7,8 +7,6 @@
 		    "code": "bookmark",
 		    "explain": "Bookmark the page to cubox",
 		    "cmds":[
-                "cubox",
-                "cb",
                 {
                     "type":"regex",
                     "label":"收藏网页",
@@ -21,16 +19,6 @@
                     "exclude":"/(http(s)?:\\/\\/)\\w+[^\\s]+(\\.[^\\s]+){1,}$/",
                     "minLength":1,
                     "maxLength":3000
-                },
-                {
-                    "type":"img",
-                    "label":"收藏图片到cubox"
-                },
-                {
-                    "type":"files",
-                    "label":"收藏视频到cubox",
-                    "match":"/*.mp4/",
-                    "maxLength":1
                 }
             ]
 		}
