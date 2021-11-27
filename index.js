@@ -47,10 +47,14 @@ function handleInputType(type){
     }
 }
 async function handleURL(){
-    let data = await Request("url",payload,tags,title,description,folder);
-    console.log(data)
+    let {code} = await Request("url",payload,tags,title,description,folder);
+    if(code===200){
+        publish.innerHTML = "成功"
+    }
 }
 async function handleMemo(){
-    let data = await Request("memo",payload,[...tags],title,description,folder);
-    console.log(data)
+    let {code} = await Request("memo",payload,[...tags],title,description,folder);
+    if(code===200){
+        publish.innerHTML = "成功"
+    }
 }
